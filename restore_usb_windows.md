@@ -16,7 +16,7 @@ Select Rufus:
 
 Accept the User Account Control Prompt:
 
-<img src="./images/restore_usb_windows/img_004.png" alt="img_004" width="250"/>
+<img src="./images/restore_usb_windows/img_004.png" alt="img_004" width="300"/>
 
 Select: 
 
@@ -28,14 +28,14 @@ Select:
 
 Then select Start:
 
-<img src="./images/restore_usb_windows/img_005.png" alt="img_005" width="800"/>
+<img src="./images/restore_usb_windows/img_005.png" alt="img_005" width="400"/>
 
 Select OK:
 
-<img src="./images/restore_usb_windows/img_006.png" alt="img_006" width="300"/>
+<img src="./images/restore_usb_windows/img_006.png" alt="img_006" width="400"/>
 
 Select Finish:
 
-<img src="./images/restore_usb_windows/img_007.png" alt="img_007" width="800"/>
+<img src="./images/restore_usb_windows/img_007.png" alt="img_007" width="400"/>
 
 The USB Flash Drive now has a GPT Partition Table with a single NTFS Partition. [Return to Fedora Installation Guide](./readme.md).
