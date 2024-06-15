@@ -9,7 +9,11 @@ The computer will reboot going to the OOBE Setup:
 
 ### Setup
 
-If the Setup does not show, you ahve booted using the Live USB. Go to the Power Menu and then Power Off. Then Power Off the PC, remove the Bootable USB and retry:
+The Fedora Boot Entry on the Internal Drive should take precedence over the Boot Entry on the Fedora Bootable USB and the Start Setup screen should display.
+
+If the Install screen previously seen displays instead, you have booted using the Live USB again. If this happens go to the Power Menu and then Power Off. Then Power Off the PC, remove the Bootable USB and power up your PC.
+
+Select Start Setup:
 
 <img src="./images/oobe_setup/img_003.png" alt="img_003" width="400"/>
 

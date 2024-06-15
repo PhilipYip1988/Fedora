@@ -30,6 +30,8 @@ Some of the BIOS Settings need to be changed in order for Linux to recognise the
 
 ## Live USB Installation
 
+The Fedora Live USB can be used to boot into a GNOME Live Desktop Environment where the Services are run using RAM and the USB is used as a storage drive. The Live USB can be used to install Fedora:
+
 * [Installation from Live USB](./live_usb.md)
 
 ## Out of the Box Setup
@@ -38,7 +40,7 @@ The Out of the Box Setup prompts to connect to a Wireless Network, Enable Third-
 
 * [Out of the Box Setup and Software Update](./oobe_setup.md)
 
-## GNOME
+## Vanilla GNOME
 
 
 ## Touchpad
@@ -52,6 +54,8 @@ The Out of the Box Setup prompts to connect to a Wireless Network, Enable Third-
 
 ## GNOME Extensions
 
+
+## GNOME Extensions (Third-Party)
 
 
 ## Additional Drivers
@@ -85,20 +89,7 @@ nvidia driver
 
 * [Tutorial Video](https://www.youtube.com/watch?v=k7ObxUfRqWQ&ab_channel=PhilipYip)
 * [System Requirements](./requirements.md)
-* Creating a Bootable USB 
-    * On Windows with Rufus
-    * On Fedora with Fedora Media Writer
-* UEFI BIOS Update Via USB
-* UEFI BIOS Settings
-* Storage Controller
-    * Boot Sequence
-    * Using Dell Data Wipe to Securely Wipe Internal Drives
-    * Preboot Behaviour (Minimal Fast Boot vs Through Fast Boot)
-* Booting from USB
-    * Fedora Live USB and Installation
-    * Fedora Setup
-* RPM and FlatHub Third Party Repositories
-* Welcome Tour and GNOME Desktop Environment
+
 * Software Update
     * OS and App Updates
     * Firmware Update
