@@ -1,11 +1,47 @@
 # Fedora
 
+## Creating Installation Media
+
+* [Creating a Bootable USB Using the Fedora Media Writer Windows](./fedora_media_writer_windows.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 In this guide, I look at installation and setup of Fedora 40 on a Dell Latitude (9420) 14 2 in 1 Touchscreen Convertible Device with a WD19TB Thunderbolt Dock. Fedora is the leading edge Linux Distribution and includes Linux Kernel 6.8, the GNOME 46 Desktop Environment and the Wayland Display Protocol. If third-party repositories are enabled, FlatPak packages are installable from Software. Software can seamlessly be used to install new Applications, handles Operating System Updates, Application Updates and Device Firmware Updates via the Linux Vendor Service. This integrated functionality makes Fedora much more logical than most other Linux distributions that typically fragment these components.
 
 Fedora uses a vanilla GNOME however this can be customised using GNOME Tweaks, GNOME Extensions and GNOME Settings as shown in this guide. The GNOME Desktop Environment is the Linux Desktop environment that has the most support for a 2 in 1 Touchscreen Convertible Device exhibiting a Touchscreen Keyboard and Device autorotation out of the box.
 
 * [Tutorial Video](https://www.youtube.com/watch?v=k7ObxUfRqWQ&ab_channel=PhilipYip)
-* System Requirements
+* [System Requirements](./requirements.md)
 * Creating a Bootable USB 
     * On Windows with Rufus
     * On Fedora with Fedora Media Writer

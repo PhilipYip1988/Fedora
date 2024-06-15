@@ -1,14 +1,36 @@
-# System Requirements
+## System Requirements
 
-This guide covers installation of Fedora on a system that is subject to the following minimum system requirements:
+The default Desktop Environment for Fedora is GNOME which usually gives the best Fedora experience. Other Desktop Environments as available as Fedora Spins. 
+
+### GNOME Desktop Environment
+
+Fedora uses the GNOME Desktop Environment and modern Wayland display protocol. This is the most functional desktop environment supporting both non-touch and touch. For a good Fedora experience the system should satisfy the minimum following system requirements:
 
 * Manufactured Date: Late 2015
 * BIOS: UEFI BIOS with Secure Boot
 * Processor: Intel 6th Generation (i3, i5 or i7) Processor or AMD Ryzen Processor
 * 8 GB RAM
-* 250 GB NVMe SSD or SATA SSD
+* NVMe SSD or SATA SSD
 * Touchscreen Convertible (Optional)
 
-Satisfying the minimum system requirements mentioned above will give a good Fedora experience with the current Wayland display protocol. It is possible to run Fedora on lesser hardware using the legacy XOrg Display Protocol and Legacy BIOS although there was a recent discussion on [Depreciating Legacy BIOS Support](https://fedoraproject.org/wiki/Changes/DeprecateLegacyBIOS).
+### LXDE Desktop Environment
+
+The Fedora LXDE Spin uses the LXDE Desktop Environment. This Desktop Environment is lightweight and uses the former X11 Display Protocol. For an acceptable Fedora experience the system should satisfy the minimum following system requirements:
+
+* Manufactured Date: Late 2012
+* BIOS: UEFI BIOS with Secure Boot
+* Processor: Intel 3rd Generation (i3, i5 or i7) Processor 
+* 4 GB RAM
+* SATA SSD
+
+### Hard Drive
+
+
+### RAM
+
+
+### Legacy BIOS
+
+
 
 Return to [Fedora Installation](./README.md)
