@@ -75,23 +75,38 @@ The paste it to the USB Flash Drive:
 
 <img src="./images/bios_update_usb_windows/img_015.png" alt="img_015" width="400"/>
 
+The USB Flash Drive with the BIOS Update is now prepared:
+
+<img src="./images/bios_update_usb_windows/img_016.png" alt="img_016" width="400"/>
+
 ### Booting in the BIOS Boot Menu
 
 Insert the USB Flash Drive with the BIOS Update. Press `F12` on a Dell to get to the BIOS Boot Menu:
 
-<img src="./images/bios_update_usb_windows/img_016.png" alt="img_016" width="400"/>
 <img src="./images/bios_update_usb_windows/img_017.png" alt="img_017" width="400"/>
+
+To the top right, the BIOS Version will be listed:
+
 <img src="./images/bios_update_usb_windows/img_018.png" alt="img_018" width="400"/>
+
+Select Flash from File:
+
 <img src="./images/bios_update_usb_windows/img_019.png" alt="img_019" width="400"/>
+
+Select the USB Flash Drive:
+
 <img src="./images/bios_update_usb_windows/img_020.png" alt="img_020" width="400"/>
+
+Select the BIOS Update and select Submit:
+
 <img src="./images/bios_update_usb_windows/img_021.png" alt="img_021" width="400"/>
+
+Select Update BIOS:
+
 <img src="./images/bios_update_usb_windows/img_022.png" alt="img_022" width="400"/>
+
+The BIOS Update will now be applied and the computer will restart:
+
 <img src="./images/bios_update_usb_windows/img_023.png" alt="img_023" width="400"/>
-<img src="./images/bios_update_usb_windows/img_024.png" alt="img_024" width="400"/>
-<img src="./images/bios_update_usb_windows/img_025.png" alt="img_025" width="400"/>
-<img src="./images/bios_update_usb_windows/img_026.png" alt="img_026" width="400"/>
-<img src="./images/bios_update_usb_windows/img_027.png" alt="img_027" width="400"/>
-<img src="./images/bios_update_usb_windows/img_028.png" alt="img_028" width="400"/>
 
-
-[Return to Fedora Installation](./readme.md).
+[Return to Fedora Installation Guide](./readme.md).
