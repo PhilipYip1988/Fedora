@@ -4,15 +4,15 @@ The Fedora Media Writer will create a single partition on the USB Flash Drive th
 
 Go to the [Rufus Download Page](https://rufus.ie/en/) and select the latest version of Rufus:
 
-<img src="./images/restore_usb_windows/img_001.png" alt="img_001" width="600"/>
+<img src="./images/restore_usb_windows/img_001.png" alt="img_001" width="800"/>
 
 The Rufus application will be saved in the Downloads folder
 
-<img src="./images/restore_usb_windows/img_002.png" alt="img_002" width="600"/>
+<img src="./images/restore_usb_windows/img_002.png" alt="img_002" width="800"/>
 
 Select Rufus:
 
-<img src="./images/restore_usb_windows/img_003.png" alt="img_003" width="600"/>
+<img src="./images/restore_usb_windows/img_003.png" alt="img_003" width="800"/>
 
 Accept the User Account Control Prompt:
 
@@ -28,7 +28,7 @@ Select:
 
 Then select Start:
 
-<img src="./images/restore_usb_windows/img_005.png" alt="img_005" width="600"/>
+<img src="./images/restore_usb_windows/img_005.png" alt="img_005" width="800"/>
 
 Select OK:
 
@@ -36,6 +36,6 @@ Select OK:
 
 Select Finish:
 
-<img src="./images/restore_usb_windows/img_007.png" alt="img_007" width="600"/>
+<img src="./images/restore_usb_windows/img_007.png" alt="img_007" width="800"/>
 
 The USB Flash Drive now has a GPT Partition Table with a single NTFS Partition. [Return to Fedora Installation Guide](./readme.md).
