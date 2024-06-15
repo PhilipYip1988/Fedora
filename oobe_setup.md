@@ -4,8 +4,8 @@
 
 The computer will reboot going to the OOBE Setup:
 
-<img src="./images/oobe_setup/img_001.png" alt="img_001" width="400"/>
-<img src="./images/oobe_setup/img_002.png" alt="img_002" width="400"/>
+<img src="./images/oobe_setup/img_001.png" alt="img_001" width="600"/>
+<img src="./images/oobe_setup/img_002.png" alt="img_002" width="600"/>
 
 ### Setup
 
@@ -15,27 +15,27 @@ If the Install screen previously seen displays instead, you have booted using th
 
 Select Start Setup:
 
-<img src="./images/oobe_setup/img_003.png" alt="img_003" width="400"/>
+<img src="./images/oobe_setup/img_003.png" alt="img_003" width="600"/>
 
 ### Wireless Network
 
 Select your WiFi network:
 
-<img src="./images/oobe_setup/img_004.png" alt="img_004" width="400"/>
+<img src="./images/oobe_setup/img_004.png" alt="img_004" width="600"/>
 
 Input your Wireless Password and select Connect:
 
-<img src="./images/oobe_setup/img_005.png" alt="img_005" width="400"/>
+<img src="./images/oobe_setup/img_005.png" alt="img_005" width="600"/>
 
 The tick should display beside your WIreless network, select Next:
 
-<img src="./images/oobe_setup/img_006.png" alt="img_006" width="400"/>
+<img src="./images/oobe_setup/img_006.png" alt="img_006" width="600"/>
 
 ### Privacy Settings
 
 Select your Privacy Settings and select Next:
 
-<img src="./images/oobe_setup/img_007.png" alt="img_007" width="400"/>
+<img src="./images/oobe_setup/img_007.png" alt="img_007" width="600"/>
 
 ### Enable Third-Party Repositories
 
@@ -43,11 +43,11 @@ For software installation Fedora can use two package types RPMs and Flatpaks. Ho
 
 Select Enable Third-Party Repositories:
 
-<img src="./images/oobe_setup/img_008.png" alt="img_008" width="400"/>
+<img src="./images/oobe_setup/img_008.png" alt="img_008" width="600"/>
 
 Select Next:
 
-<img src="./images/oobe_setup/img_009.png" alt="img_009" width="400"/>
+<img src="./images/oobe_setup/img_009.png" alt="img_009" width="600"/>
 
 
 ### User Account
@@ -59,27 +59,27 @@ Input the:
 
 and select next:
 
-<img src="./images/oobe_setup/img_010.png" alt="img_010" width="400"/>
+<img src="./images/oobe_setup/img_010.png" alt="img_010" width="600"/>
 
 Input a password and confirm the password and select Next:
 
-<img src="./images/oobe_setup/img_011.png" alt="img_011" width="400"/>
+<img src="./images/oobe_setup/img_011.png" alt="img_011" width="600"/>
 
 Select Start Using Fedora Linux:
 
-<img src="./images/oobe_setup/img_012.png" alt="img_012" width="400"/>
+<img src="./images/oobe_setup/img_012.png" alt="img_012" width="600"/>
 
 ### Software Update
 
 Press `⊞` to display the GNOME Dock and applications screen. Select Software:
 
-<img src="./images/oobe_setup/img_013.png" alt="img_013" width="400"/>
+<img src="./images/oobe_setup/img_013.png" alt="img_013" width="600"/>
 
 Select Updates:
 
-<img src="./images/oobe_setup/img_014.png" alt="img_014" width="400"/>
+<img src="./images/oobe_setup/img_014.png" alt="img_014" width="600"/>
 
-<img src="./images/oobe_setup/img_015.png" alt="img_015" width="400"/>
+<img src="./images/oobe_setup/img_015.png" alt="img_015" width="600"/>
 
 Updates will list: 
 
@@ -89,42 +89,42 @@ Updates will list:
 
 Select Restart and Update for the Software Updates:
 
-<img src="./images/oobe_setup/img_016.png" alt="img_016" width="400"/>
+<img src="./images/oobe_setup/img_016.png" alt="img_016" width="600"/>
 
 Select Restart and Install:
 
-<img src="./images/oobe_setup/img_017.png" alt="img_017" width="400"/>
+<img src="./images/oobe_setup/img_017.png" alt="img_017" width="600"/>
 
 The Computer will Restart:
 
-<img src="./images/oobe_setup/img_018.png" alt="img_018" width="400"/>
-<img src="./images/oobe_setup/img_019.png" alt="img_019" width="400"/>
+<img src="./images/oobe_setup/img_018.png" alt="img_018" width="600"/>
+<img src="./images/oobe_setup/img_019.png" alt="img_019" width="600"/>
 
 For a Firmware Update select Update:
 
-<img src="./images/oobe_setup/img_020.png" alt="img_020" width="400"/>
+<img src="./images/oobe_setup/img_020.png" alt="img_020" width="600"/>
 
 Select Restart when Prompted:
 
-<img src="./images/oobe_setup/img_021.png" alt="img_021" width="400"/>
-<img src="./images/oobe_setup/img_022.png" alt="img_022" width="400"/>
+<img src="./images/oobe_setup/img_021.png" alt="img_021" width="600"/>
+<img src="./images/oobe_setup/img_022.png" alt="img_022" width="600"/>
 
 For a Thunderbolt Dock, each component of the Dock may be separately listed however should not be separately updated. 
 
 Select Update to Update the Dock Firmware (this will update each of the components of the Dock cumulatively):
 
-<img src="./images/oobe_setup/img_023.png" alt="img_023" width="400"/>
-<img src="./images/oobe_setup/img_024.png" alt="img_024" width="400"/>
+<img src="./images/oobe_setup/img_023.png" alt="img_023" width="600"/>
+<img src="./images/oobe_setup/img_024.png" alt="img_024" width="600"/>
 
 Select OK and unplug the Dock as instructed, wait a couple of minutes and then plug it back in:
 
-<img src="./images/oobe_setup/img_025.png" alt="img_025" width="400"/>
+<img src="./images/oobe_setup/img_025.png" alt="img_025" width="600"/>
 
 ### PC Name
 
 Press `⊞` to display the GNOME Dock and applications screen. Select Terminal:
 
-<img src="./images/oobe_setup/img_026.png" alt="img_026" width="400"/>
+<img src="./images/oobe_setup/img_026.png" alt="img_026" width="600"/>
 
 Notice the Terminal Prompt begins with:
 
@@ -132,26 +132,26 @@ Notice the Terminal Prompt begins with:
 
 The username is `philip` as specified during the install and the default `pcname` is`fedora`:
 
-<img src="./images/oobe_setup/img_027.png" alt="img_027" width="400"/>
+<img src="./images/oobe_setup/img_027.png" alt="img_027" width="600"/>
 
 To change the 'pcname' press `⊞` to display the GNOME Dock and applications screen. Select Settings:
 
-<img src="./images/oobe_setup/img_028.png" alt="img_028" width="400"/>
+<img src="./images/oobe_setup/img_028.png" alt="img_028" width="600"/>
 
 Select the System tab to the left and then select About at the bottom:
 
-<img src="./images/oobe_setup/img_029.png" alt="img_029" width="400"/>
+<img src="./images/oobe_setup/img_029.png" alt="img_029" width="600"/>
 
 The default `pcname` of `fedora` shows:
 
-<img src="./images/oobe_setup/img_030.png" alt="img_030" width="400"/>
+<img src="./images/oobe_setup/img_030.png" alt="img_030" width="600"/>
 
 Replace this with your desired `pcname` in this case `pc` and select the tick to apply:
 
-<img src="./images/oobe_setup/img_031.png" alt="img_031" width="400"/>
+<img src="./images/oobe_setup/img_031.png" alt="img_031" width="600"/>
 
 When the system is rebooted the pcname will be updated:
 
-<img src="./images/oobe_setup/img_032.png" alt="img_032" width="400"/>
+<img src="./images/oobe_setup/img_032.png" alt="img_032" width="600"/>
 
 [Return to Fedora Installation](./readme.md)
