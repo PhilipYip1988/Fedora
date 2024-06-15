@@ -24,6 +24,9 @@ Some of the BIOS Settings need to be changed in order for Linux to recognise the
 
 ## Out of the Box Setup
 
+* [Out of the Box Setup and Software Update](./oobe_setup.md)
+
+
 nvidia driver
 computer name
 software update
