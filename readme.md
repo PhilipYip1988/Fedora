@@ -1,5 +1,15 @@
 # Fedora
 
+In this guide, I look at installation and setup of Fedora on a Dell Latitude (9420) 14 2 in 1 Touchscreen Convertible Device with a WD19TB Thunderbolt Dock. Fedora is the leading edge Linux Distribution and includes Linux Kernel 6.8, the GNOME 46 Desktop Environment and the Wayland Display Protocol. If third-party repositories are enabled, FlatPak packages are installable from Software. Software can seamlessly be used to install new Applications, handles Operating System Updates, Application Updates and Device Firmware Updates via the Linux Vendor Service. This integrated functionality makes Fedora much more logical than most other Linux distributions that typically fragment these components.
+
+Fedora uses a vanilla GNOME however this can be customised using GNOME Tweaks, GNOME Extensions and GNOME Settings as shown in this guide. The GNOME Desktop Environment is the Linux Desktop environment that has the most support for a 2 in 1 Touchscreen Convertible Device exhibiting a Touchscreen Keyboard and Device autorotation out of the box.
+
+## System Requirements
+
+For a good Fedora Experience, the PC should match the following system requirements:
+
+* [System Requirements](./requirements.md)
+
 ## Creating Installation Media
 
 The Bootable USB can be created on Windows, Linux and Mac using the Fedora Media Writer:
@@ -24,12 +34,33 @@ Some of the BIOS Settings need to be changed in order for Linux to recognise the
 
 ## Out of the Box Setup
 
+The Out of the Box Setup prompts to connect to a Wireless Network, Enable Third-Party Flatpak Repositories, Manage Privacy Settings and perform a Software Update:
+
 * [Out of the Box Setup and Software Update](./oobe_setup.md)
+
+## GNOME
+
+
+## Touchpad
+
+
+## Touchscreen and Screen Keyboard
+
+
+## GNOME Tweaks
+
+
+## GNOME Extensions
+
+
+
+## Additional Drivers
+
+
+
 
 
 nvidia driver
-computer name
-software update
 
 
 
@@ -50,9 +81,7 @@ software update
 
 
 
-In this guide, I look at installation and setup of Fedora 40 on a Dell Latitude (9420) 14 2 in 1 Touchscreen Convertible Device with a WD19TB Thunderbolt Dock. Fedora is the leading edge Linux Distribution and includes Linux Kernel 6.8, the GNOME 46 Desktop Environment and the Wayland Display Protocol. If third-party repositories are enabled, FlatPak packages are installable from Software. Software can seamlessly be used to install new Applications, handles Operating System Updates, Application Updates and Device Firmware Updates via the Linux Vendor Service. This integrated functionality makes Fedora much more logical than most other Linux distributions that typically fragment these components.
 
-Fedora uses a vanilla GNOME however this can be customised using GNOME Tweaks, GNOME Extensions and GNOME Settings as shown in this guide. The GNOME Desktop Environment is the Linux Desktop environment that has the most support for a 2 in 1 Touchscreen Convertible Device exhibiting a Touchscreen Keyboard and Device autorotation out of the box.
 
 * [Tutorial Video](https://www.youtube.com/watch?v=k7ObxUfRqWQ&ab_channel=PhilipYip)
 * [System Requirements](./requirements.md)
