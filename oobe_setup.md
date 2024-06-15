@@ -1,0 +1,79 @@
+## OOBE Setup
+
+### First Time Boot
+
+The computer will reboot going to the OOBE Setup:
+
+<img src="./images/oobe_setup/img_001.png" alt="img_001" width="400"/>
+<img src="./images/oobe_setup/img_002.png" alt="img_002" width="400"/>
+
+### Setup
+
+If the Setup does not show, you ahve booted using the Live USB. Go to the Power Menu and then Power Off. Then Power Off the PC, remove the Bootable USB and retry:
+
+<img src="./images/oobe_setup/img_003.png" alt="img_003" width="400"/>
+
+### Wireless Network
+
+Select your WiFi network:
+
+<img src="./images/oobe_setup/img_004.png" alt="img_004" width="400"/>
+
+Input your Wireless Password and select Connect:
+
+<img src="./images/oobe_setup/img_005.png" alt="img_005" width="400"/>
+
+The tick should display beside your WIreless network, select Next:
+
+<img src="./images/oobe_setup/img_006.png" alt="img_006" width="400"/>
+
+### Privacy Settings
+
+Select your Privacy Settings and select Next:
+
+<img src="./images/oobe_setup/img_007.png" alt="img_007" width="400"/>
+
+### Enable Third-Party Respositories
+
+
+
+<img src="./images/oobe_setup/img_008.png" alt="img_008" width="400"/>
+<img src="./images/oobe_setup/img_009.png" alt="img_009" width="400"/>
+
+
+### User Account
+
+<img src="./images/oobe_setup/img_010.png" alt="img_010" width="400"/>
+<img src="./images/oobe_setup/img_011.png" alt="img_011" width="400"/>
+<img src="./images/oobe_setup/img_012.png" alt="img_012" width="400"/>
+
+### Software Update
+
+
+<img src="./images/oobe_setup/img_013.png" alt="img_013" width="400"/>
+<img src="./images/oobe_setup/img_014.png" alt="img_014" width="400"/>
+<img src="./images/oobe_setup/img_015.png" alt="img_015" width="400"/>
+
+
+
+
+<img src="./images/oobe_setup/img_016.png" alt="img_016" width="400"/>
+<img src="./images/oobe_setup/img_017.png" alt="img_017" width="400"/>
+<img src="./images/oobe_setup/img_018.png" alt="img_018" width="400"/>
+<img src="./images/oobe_setup/img_019.png" alt="img_019" width="400"/>
+<img src="./images/oobe_setup/img_020.png" alt="img_020" width="400"/>
+<img src="./images/oobe_setup/img_021.png" alt="img_021" width="400"/>
+<img src="./images/oobe_setup/img_022.png" alt="img_022" width="400"/>
+<img src="./images/oobe_setup/img_023.png" alt="img_023" width="400"/>
+<img src="./images/oobe_setup/img_024.png" alt="img_024" width="400"/>
+<img src="./images/oobe_setup/img_025.png" alt="img_025" width="400"/>
+
+### PC Name
+
+
+<img src="./images/oobe_setup/img_026.png" alt="img_026" width="400"/>
+<img src="./images/oobe_setup/img_027.png" alt="img_027" width="400"/>
+<img src="./images/oobe_setup/img_028.png" alt="img_028" width="400"/>
+<img src="./images/oobe_setup/img_029.png" alt="img_029" width="400"/>
+<img src="./images/oobe_setup/img_030.png" alt="img_030" width="400"/>
+<img src="./images/oobe_setup/img_031.png" alt="img_031" width="400"/>

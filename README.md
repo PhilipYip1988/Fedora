@@ -2,20 +2,31 @@
 
 ## Creating Installation Media
 
+The Bootable USB can be created on Windows, Linux and Mac using the Fedora Media Writer:
+
 * [Creating a Bootable USB Using the Fedora Media Writer Windows](./fedora_media_writer_windows.md)
 
+## Updating the BIOS from USB
 
+BIOS Updates are often released in order to accomodate new Operating Systems. It is recommended to make sure your BIOS is up to date before installing Fedora.
 
+* [Updating the BIOS from USB Windows](./bios_update_usb.md)
 
+## BIOS Setup
 
+Some of the BIOS Settings need to be changed in order for Linux to recognise the Storage Device:
 
+* [BIOS Setup and Data Wipe](./bios_setup.md)
 
+## Live USB Installation
 
+* [Installation from Live USB](./live_usb.md)
 
+## Out of the Box Setup
 
-
-
-
+nvidia driver
+computer name
+software update
 
 
 

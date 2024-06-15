@@ -38,4 +38,4 @@ Select Finish:
 
 <img src="./images/restore_usb_windows/img_007.png" alt="img_007" width="400"/>
 
-The USB Flash Drive now has a GPT Partition Table with a single NTFS Partition. [Return to Fedora Installation](./readme.md).
+The USB Flash Drive now has a GPT Partition Table with a single NTFS Partition. [Return to Fedora Installation Guide](./readme.md).
