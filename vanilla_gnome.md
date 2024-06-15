@@ -1,6 +1,10 @@
 ## GNOME Desktop Environment
 
 Fedora has a Vanilla GNOME Desktop Environment.
+
+Press `⊞` to view the GNOME Dock. This will take the application out of focus. All applications will be re-tiled so the open application of interest can be selected. The dock has the all applications button which is similar to the Windows start screen.
+
+
 <img src="./images/vanilla_gnome/img_001.png" alt="img_001" width="800"/>
 <img src="./images/vanilla_gnome/img_002.png" alt="img_002" width="800"/>
 <img src="./images/vanilla_gnome/img_003.png" alt="img_003" width="800"/>
