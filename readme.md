@@ -62,6 +62,10 @@ New users to Linux from Windows should take some time to get accustomed to windo
 * WD19TB Dock
     * External Monitors
 
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+
+gsettings set org.gnome.mutter experimental-features "[]"
+
 ## GNOME Tweaks and Extensions
 
 * GNOME Tweaks
