@@ -1,20 +1,28 @@
 # Fedora
 
+Fedora Setup Guide using a Dell Latitude 9420 2-in-1 Touchscreen Convertible and WD19TB Thunderbolt Dock as an example device.
+
+## System Requirements
+
+The following system requirements should be satisified for a good Fedora experience:
+
+* [System Requirements](./requirements.md)
+
 ## Creating Installation Media
 
 The Bootable USB can be created on Windows, Linux and Mac using the Fedora Media Writer:
 
-* [Creating a Bootable USB Using the Fedora Media Writer Windows](./fedora_media_writer_windows.md)
+* [Creating a Bootable USB (Fedora Media Writer - Windows)](./fedora_media_writer_windows.md)
 
 ## Updating the BIOS from USB
 
-BIOS Updates are often released in order to accommodate new Operating Systems. It is recommended to make sure your BIOS is up to date before installing Fedora.
+BIOS Updates are often released in order to accommodate new Operating Systems. It is recommended to make sure your BIOS is up to date before installing Fedora. This can be done from USB for most Dell models manufactured post-2016:
 
-* [Updating the BIOS from USB Windows](./bios_update_usb.md)
+* [Updating the BIOS from USB (Windows)](./bios_update_usb_windows.md)
 
 ## BIOS Setup
 
-Some of the BIOS Settings need to be changed in order for Linux to recognise the Storage Device:
+Some of the BIOS Settings need to be changed in order for Linux to recognise the Storage Device. The Dell Latitude 9420 is used as an example. BIOS Setup screens vary slightly from device to device:
 
 * [BIOS Setup and Data Wipe](./bios_setup.md)
 
@@ -32,7 +40,7 @@ The Out of the Box Experience setup is used to create a user account:
 
 ## GNOME Desktop Environment and Terminal Overview
 
-New users to Linux from Windows should take some time to get accustomed to window management using vanilla GNOME and the Linux Terminal as it is more frequently used than the Windows Terminal. By default binaries (applications) are run as a `user` and can only make changes to the users 'home' folder. Binaries can be run as a `super user` in order to make changes elsewhere on the system:
+New users to Linux from Windows should take some time to get accustomed to window management using vanilla GNOME and the Linux Terminal as it is more frequently used than the Windows Terminal. By default binaries (applications) are run as a `user` and can only make changes to the users `home` folder. Binaries can be run as a `super user` in order to make changes elsewhere on the system:
 
 * [GNOME Desktop Environment and Terminal Overview](./vanilla_gnome.md)
 
@@ -43,30 +51,19 @@ New users to Linux from Windows should take some time to get accustomed to windo
     * Two Finger Push
     * Corner Push
 
-
-
-
-
-
-
-
+## Touchscreen
 
 * Touchscreen
     * Accessibility Menu and Screen Keyboard
     * Device Rotation
+
+## Wayland Display Protocol
+
 * WD19TB Dock
     * External Monitors
-* Applications
-    * Browsers 
-        * FireFox
-        * Chromium
-    * Office Applications
-        * Libre Office
-        * OnlyOffice Desktop Editors
-    * Paint Applications
-        * Drawing
-        * KolourPaint
-    * GNOME Screen Capture
+
+## GNOME Tweaks and Extensions
+
 * GNOME Tweaks
 * GNOME Extensions (Official)
 * GNOME Extension Manager (Third-Party)
@@ -76,6 +73,23 @@ New users to Linux from Windows should take some time to get accustomed to windo
     * Show Desktop Extension
     * Tiling Assistant Extension
     * GTile Extension
+
+## Applications 
+
+* GNOME Screen Capture
+* Browsers 
+    * FireFox
+    * Chromium
+* Office Applications
+    * Libre Office
+    * OnlyOffice Desktop Editors
+* Paint Applications
+    * JSPaint
+    * Drawing
+    * KolourPaint
+
+## Drivers
+
 * RPM Fusion Installation
     * Linux Kernel VS Third-Party Drivers
     * Disabling Secure Boot
@@ -83,13 +97,6 @@ New users to Linux from Windows should take some time to get accustomed to windo
     * Enabling RPM Repositories
     * Webcam Driver
 
-
-
-
-
-
-
-## Drivers
 
 * NVIDIA Driver and Codecs
 * RPM Fusion
