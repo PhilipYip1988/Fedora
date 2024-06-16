@@ -6,7 +6,7 @@ Vanilla GNOME does not have a minimise and maximise button. These can be added u
 
 <img src="./images/tweaks_extensions/img_001.png" alt="img_001" width="600"/>
 
-GNOME Tweaks contains additional settings to GNOME settings, that aren't yet incorporated into GNOME Settings. It is similar situation to the Legacy Control Panel and Windows Settings in Windows.
+GNOME Tweaks contains additional settings to GNOME settings, that aren't yet incorporated into GNOME Settings. Essentially there is similar situation between these two applications as the Legacy Control Panel and Windows Settings found in Windows.
 
 GNOME Tweaks is not preinstalled and should be installed from software:
 
@@ -96,7 +96,7 @@ To make modifications similar to Ubuntu in the Position and Size tab select left
 
 <img src="./images/tweaks_extensions/img_022.png" alt="img_022" width="600"/>
 
-To make modifications similar to Windows in the Position and Size tab select bottom, disable Intelligent Autohide and enable Panel mode. Under the launchers tab under Application button, select Move at the beginning of the dock:
+To make modifications similar to Windows in the Position and Size tab select bottom, disable Intelligent Autohide and enable Panel mode. Under the launchers tab under Application button `𓃑`, select Move at the beginning of the dock:
 
 <img src="./images/tweaks_extensions/img_023.png" alt="img_023" width="600"/>
 

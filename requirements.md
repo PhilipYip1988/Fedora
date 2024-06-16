@@ -35,6 +35,6 @@ Modern applications such as browsers are memory intensive. It is recommended to 
 
 ### UEFI and Legacy BIOS
 
-UEFI with Secure Boot has been the standard on all computers manufactured in 2012 and later. Some systems manufacturered in 2011 had a prototype UEFI BIOS without SecureBoot and all other earlier models had a Legacy BIOS. There was a discussion by the Fedora development team about removing Legacy BIOS. Legacy BIOS support removal has not been implemented however most of these >12 year old computers will struggle to run a modern operating system well and a modern web browser. This tutorial assumes a UEFI BIOS.
+UEFI with Secure Boot has been the standard on all computers manufactured in 2012 and later. Some systems manufacturered in 2011 had a prototype UEFI BIOS without SecureBoot and all other earlier models had a Legacy BIOS. There was a discussion by the Fedora development team about removing Legacy BIOS. Legacy BIOS support removal has not been implemented however most of these >12 year old computers will struggle to run a modern operating system well and a modern web browser. This tutorial assumes a UEFI capable BIOS.
 
 [Return to Fedora Installation Guide](./readme.md).

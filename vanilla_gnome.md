@@ -152,7 +152,7 @@ This is equivalent to run as administrator on Windows and is equivalent to a Use
 
 <img src="./images/vanilla_gnome/img_028.png" alt="img_028" width="300"/>
 
-Vanilla GNOME has no minimise and maximise button. Window snapping can be carried out using: 
+Vanilla GNOME has no minimise and maximise button. Application window snapping can be carried out using: 
 
 * `⊞` + `←` - left half
 * `⊞` + `→` - right half 
