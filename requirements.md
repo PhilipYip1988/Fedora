@@ -1,6 +1,6 @@
 ## System Requirements
 
-The default Desktop Environment for Fedora is GNOME which usually gives the best Fedora experience. Other Desktop Environments as available as Fedora Spins. 
+The default Desktop Environment for Fedora is GNOME which usually gives the best Fedora experience. Other Desktop Environments as available as Fedora Spins. The installation instructions in this guide apply to the GNOME Desktop environment but can be used as a guide for other Fedora Spins with different Desktop Environments.
 
 ### GNOME Desktop Environment
 

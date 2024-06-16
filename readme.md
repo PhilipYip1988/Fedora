@@ -28,7 +28,7 @@ Some of the BIOS Settings need to be changed in order for Linux to recognise the
 
 ## Live USB Installation
 
-The Live USB uses the USB flash drive as a storage device and runs a number fo services using RAM. It can be used to try Fedora however note that the Live USB may be slow if the read/write speed of the USB Flash Drive si slow. A Fedora Live USB is typically used to being the Fedora Installation:
+The Live USB uses the USB flash drive as a storage device and runs a number fo services using RAM. It can be used to try Fedora however note that the Live USB may be slow if the read/write speed of the USB Flash Drive is slow. A Fedora Live USB is typically used to being the Fedora Installation:
 
 * [Installation from Live USB](./live_usb.md)
 
@@ -70,25 +70,9 @@ The Wayland Display Protocol contains experimental Fractional Scaling which allo
 
 ## Applications 
 
-GNOME contains a number of commonly preinstalled applications. The GNOME Software store contains equivalents to most of the software installed in Windows. Some other applications have web application equivalents.
+GNOME contains a number of commonly preinstalled applications. The GNOME Software contains equivalents to most of the software installed in Windows and some applications have web application equivalents:
 
-
-
-
-
-
-
-* GNOME Screen Capture
-* Browsers 
-    * FireFox
-    * Chromium
-* Office Applications
-    * Libre Office
-    * OnlyOffice Desktop Editors
-* Paint Applications
-    * JSPaint
-    * Drawing
-    * KolourPaint
+* [Applications](./applications.md)
 
 ## Drivers
 

@@ -77,21 +77,58 @@ The new theme displays:
 
 This looks better but it is missing the ability to zoom out to values less than 100 % which was implemented in the Windows 7 paint.
 
-## GNOMEScreen Capture
+## GNOME Capture
+
+GNOME Capture is the counterpart to the Snipping Tool in Windows. It can be activated using the `PrtScr` button. There is an option to capture a selection:
 
 <img src="./images/applications/img_017.png" alt="img_017" width="600"/>
+
+The full screen:
+
 <img src="./images/applications/img_018.png" alt="img_018" width="600"/>
+
 <img src="./images/applications/img_019.png" alt="img_019" width="600"/>
+
+Or a Window:
+
 <img src="./images/applications/img_020.png" alt="img_020" width="600"/>
+
+Once the select is made, select capture:
+
 <img src="./images/applications/img_021.png" alt="img_021" width="600"/>
+
+The image is automatically saved to `~/Pictures/Screenshots`
+
 <img src="./images/applications/img_022.png" alt="img_022" width="600"/>
+
 <img src="./images/applications/img_023.png" alt="img_023" width="600"/>
+
 <img src="./images/applications/img_024.png" alt="img_024" width="600"/>
+
+GNOME Capture also has the option to take a screen recording:
+
 <img src="./images/applications/img_025.png" alt="img_025" width="600"/>
+
+When the Record button is selected:
+
 <img src="./images/applications/img_026.png" alt="img_026" width="600"/>
+
+The timer will display in the titlebar and can be pressed to end the screen recording:
+
 <img src="./images/applications/img_027.png" alt="img_027" width="600"/>
+
+The video is automatically saved to `~/Videos/Screencasts`
+
 <img src="./images/applications/img_028.png" alt="img_028" width="600"/>
+
 <img src="./images/applications/img_029.png" alt="img_029" width="600"/>
+
 <img src="./images/applications/img_030.png" alt="img_030" width="600"/>
+
+Unfortunately at present, the screen recording does not include the mouse cursor:
+
 <img src="./images/applications/img_031.png" alt="img_031" width="600"/>
 
+This is a screen capture of the video playback using a capture device and the mouse cursor shown is not the one that should be in the video.
+
+[Return to Fedora Installation Guide](./readme.md).
