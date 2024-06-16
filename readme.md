@@ -44,6 +44,12 @@ New users to Linux from Windows should take some time to get accustomed to windo
 
 * [GNOME Desktop Environment and Terminal Overview](./vanilla_gnome.md)
 
+## GNOME Tweaks and Extensions
+
+GNOME Tweaks and GNOME Extensions can be used to customise the behaviour of the Desktop Environment. Common customisations make the Desktop Environment behave similar to Ubuntu or Microsoft Windows:
+
+* [GNOME Tweaks and extensions](./tweaks_extensions.md)
+
 ## Touchpad 
 
 * Touchpad
@@ -65,18 +71,6 @@ New users to Linux from Windows should take some time to get accustomed to windo
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 
 gsettings set org.gnome.mutter experimental-features "[]"
-
-## GNOME Tweaks and Extensions
-
-* GNOME Tweaks
-* GNOME Extensions (Official)
-* GNOME Extension Manager (Third-Party)
-    * Dash to Dock Extension
-    * Desktop Icons NG Extension
-    * Clipboard History Extension
-    * Show Desktop Extension
-    * Tiling Assistant Extension
-    * GTile Extension
 
 ## Applications 
 
