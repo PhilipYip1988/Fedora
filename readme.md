@@ -60,18 +60,23 @@ A mouse with physical buttons and a touchpad with a pressure sensor behave diffe
 
 GNOME is the most advanced Linux Desktop Environment when it comes to 2-in-1 Convertible Touchscreen Devices, offering full touch screen support, making use of the rotation sensor when in tent or tablet mode and includes a touchscreen keyboard. Unfortunately the touchscreen experience is still slightly behind that of Windows and there is no support for the touchscreen keyboard with a Chromium based application, which is otherwise touchscreen friendly:
 
-* [2 in 1 Touchscreen Device](./touchscreen.md)
+* [2-in-1 Touchscreen Convertible Device](./touchscreen.md)
 
 ## Wayland Display Protocol
 
-* WD19TB Dock
-    * External Monitors
+The Wayland Display Protocol contains experimental Fractional Scaling which allows each monitor to be set to a different resolution. Because this is an experimental setting it is not enabled by default. In this example a Dell Latitude 9420 with a high resolution laptop screen is docked to a WD19TB with a standard resolution monitor. The laptop screen is set to 175 % and the external monitor is set to 100 %:
 
-gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
-
-gsettings set org.gnome.mutter experimental-features "[]"
+* [Fractional Scaling](./wayland.md)
 
 ## Applications 
+
+GNOME contains a number of commonly preinstalled applications. The GNOME Software store contains equivalents to most of the software installed in Windows. Some other applications have web application equivalents.
+
+
+
+
+
+
 
 * GNOME Screen Capture
 * Browsers 
@@ -94,35 +99,10 @@ gsettings set org.gnome.mutter experimental-features "[]"
     * Enabling RPM Repositories
     * Webcam Driver
 
-
 * NVIDIA Driver and Codecs
 * RPM Fusion
-
-
-nvidia driver
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-In this guide, I look at installation and setup of Fedora 40 on a Dell Latitude (9420) 14 2 in 1 Touchscreen Convertible Device with a WD19TB Thunderbolt Dock. Fedora is the leading edge Linux Distribution and includes Linux Kernel 6.8, the GNOME 46 Desktop Environment and the Wayland Display Protocol. If third-party repositories are enabled, FlatPak packages are installable from Software. Software can seamlessly be used to install new Applications, handles Operating System Updates, Application Updates and Device Firmware Updates via the Linux Vendor Service. This integrated functionality makes Fedora much more logical than most other Linux distributions that typically fragment these components.
-
-Fedora uses a vanilla GNOME however this can be customised using GNOME Tweaks, GNOME Extensions and GNOME Settings as shown in this guide. The GNOME Desktop Environment is the Linux Desktop environment that has the most support for a 2 in 1 Touchscreen Convertible Device exhibiting a Touchscreen Keyboard and Device autorotation out of the box.
+## Installation Video
 
 * [Tutorial Video](https://www.youtube.com/watch?v=k7ObxUfRqWQ&ab_channel=PhilipYip)
 

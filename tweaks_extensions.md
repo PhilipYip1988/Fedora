@@ -1,5 +1,7 @@
 ## Tweaks and Extensions
 
+The vanilla GNOME Shell can be modified using tweaks and extensions. Third-party extensions vary in development quality and some may lead to instabilities. The ones mentioned in this guide all have active developers and a large userbase and therefore generally work as expected.
+
 ### GNOME Tweaks
 
 Vanilla GNOME does not have a minimise and maximise button. These can be added using GNOME Tweaks:
