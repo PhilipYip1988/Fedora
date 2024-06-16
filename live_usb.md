@@ -22,7 +22,7 @@ The Live GNOME Desktop Environment has a Dock and the installer is open by defau
 
 <img src="./images/live_usb/img_005.png" alt="img_005" width="800"/>
 
-If the installer is selected, notice that it takes focus and the Dock disappears. Press `⊞` to view the GNOME Dock. This will take the application out of focus. All applications will be re-tiled so the open application of interest can be selected. The dock has the all applications button which is similar to the Windows start screen.
+If the installer is selected, notice that it takes focus and the Dock disappears. Press `⊞` to view the GNOME Dock. This will take the application out of focus. All applications will be re-tiled so the open application of interest can be selected. The dock has the all applications button `𓃑`.
 
 Select the installer and select install Fedora:
 

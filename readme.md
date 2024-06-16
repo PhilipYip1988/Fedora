@@ -52,16 +52,15 @@ GNOME Tweaks and GNOME Extensions can be used to customise the behaviour of the 
 
 ## Touchpad 
 
-* Touchpad
-    * Gestures
-    * Two Finger Push
-    * Corner Push
+A mouse with physical buttons and a touchpad with a pressure sensor behave differently by default on GNOME. The touchpad behaviour can be changed to match the mouse using GNOME Settings:
+
+* [Touchpad Behaviour Push and Gestures](./touchpad.md)
 
 ## Touchscreen
 
-* Touchscreen
-    * Accessibility Menu and Screen Keyboard
-    * Device Rotation
+GNOME is the most advanced Linux Desktop Environment when it comes to 2-in-1 Convertible Touchscreen Devices, offering full touch screen support, making use of the rotation sensor when in tent or tablet mode and includes a touchscreen keyboard. Unfortunately the touchscreen experience is still slightly behind that of Windows and there is no support for the touchscreen keyboard with a Chromium based application, which is otherwise touchscreen friendly:
+
+* [2 in 1 Touchscreen Device](./touchscreen.md)
 
 ## Wayland Display Protocol
 

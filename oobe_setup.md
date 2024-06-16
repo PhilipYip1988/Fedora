@@ -122,7 +122,7 @@ Select OK and unplug the Dock as instructed, wait a couple of minutes and then p
 
 ### PC Name
 
-Press `⊞` to display the GNOME Dock and applications screen. Select Terminal:
+Press `⊞` to display the GNOME Dock and applications screen. Select `𓃑` to get to all applications and select Terminal:
 
 <img src="./images/oobe_setup/img_026.png" alt="img_026" width="800"/>
 
