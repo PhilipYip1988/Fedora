@@ -14,11 +14,20 @@ The Bootable USB can be created on Windows, Linux and Mac using the Fedora Media
 
 * [Creating a Bootable USB (Fedora Media Writer - Windows)](./fedora_media_writer_windows.md)
 
+Incomplete!
+
+* [Creating a Bootable USB (Fedora Media Writer - Linux)](./fedora_media_writer_linux.md)
+
 ## Updating the BIOS from USB
 
 BIOS Updates are often released in order to accommodate new Operating Systems. It is recommended to make sure your BIOS is up to date before installing Fedora. This can be done from USB for most Dell models manufactured post-2016:
 
 * [Updating the BIOS from USB (Windows)](./bios_update_usb_windows.md)
+
+Incomplete!
+
+* [Updating the BIOS from USB (Linux)](./bios_update_usb_linux.md)
+
 
 ## BIOS Setup
 
@@ -75,6 +84,9 @@ GNOME contains a number of commonly preinstalled applications. The GNOME Softwar
 * [Applications](./applications.md)
 
 ## Drivers
+
+This driver is suitable for any GPU found in 2014 and later.
+
 
 * RPM Fusion Installation
     * Linux Kernel VS Third-Party Drivers
