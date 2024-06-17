@@ -4,7 +4,7 @@ Fedora Setup Guide using a Dell Latitude 9420 2-in-1 Touchscreen Convertible and
 
 ## System Requirements
 
-The following system requirements should be satisified for a good Fedora experience:
+The following system requirements should be satisfied for a good Fedora experience:
 
 * [System Requirements](./requirements.md)
 
