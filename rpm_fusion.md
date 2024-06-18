@@ -136,7 +136,15 @@ Note the Linux Kernel is signed and passes Secure Boot. Installation of third-pa
 
 #### The NVIDIA Driver
 
-NVIDIA repository vs RPM fusion...
+The NVIDIA driver supports NVIDIA cards manufactured post 2014. The NVIDIA driver can be found in multiple locations:
+
+1. NVIDIA website (.run file)
+2. NVIDIA repository
+3. RPM Fusion Non-Free repository
+
+It is not recommended to use the NVIDIA .run file however its landing page can be examined to see the [supported products](https://www.nvidia.com/download/driverResults.aspx/218153/).
+
+Although the NVIDIA and FlatPak repositories can be enabled during Fedora's OOBE setup. It should be noted that the driver does not pass Secure Boot and a Machine Owner Key needs to be created. It is slightly easier to configure a Machine Owner Key using the NVIDIA driver from RPMFusion.
 
 ##### Installing the NVIDIA RPM Fusion Driver
 
