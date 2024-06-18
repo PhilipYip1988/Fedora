@@ -10,7 +10,7 @@ The RPM Fusion Free repository contains open-source software that adheres that a
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
-
+The Fedora Cisco Openh264 repository needs to be enabled:
 
 ```bash
 sudo dnf config-manager --enable fedora-cisco-openh264
@@ -27,12 +27,6 @@ The packages in these repositories can be listed:
 ```bash
 sudo dnf repository-packages rpmfusion-free list
 sudo dnf repository-packages rpmfusion-nonfree list
-```
-
-The computer can be rebooted:
-
-```bash
-sudo reboot
 ```
 
 ### Multimedia Codecs
@@ -110,7 +104,7 @@ The Linux kernel therefore does not include the closed-source driver provided by
 
 Note the Linux Kernel is signed and passes Secure Boot. Installation of third-party drivers requires creation of a Machine Owner Key or Disabling of Secure Boot.
 
-#### The Intel 
+#### The Intel Driver
 
 ```bash
 sudo dnf install intel-media-driver xorg-x11-drv-intel linux-firmware libva-intel-driver libva-utils mesa-vulkan-drivers mesa-dri-drivers mesa-libGL mesa-libEGL mesa-libgbm gstreamer1-vaapi ffmpeg xwayland libdrm intel-gpu-tools i7z sysstat tlp powertop
@@ -165,20 +159,19 @@ sudo dracut --force
 
 ##### Signing the NVIDIA Driver from RPM Fusion
 
-Generate a Key Pair
+Generate a signing key:
 
 ```bash
 openssl req -new -x509 -newkey rsa:2048 -keyout MOK.key -out MOK.crt -nodes -days 36500 -subj "/CN=My NVIDIA Module Signing/"
 ```
 
-test
+Convert the certificate:
 
 ```bash
 openssl x509 -in MOK.crt -outform DER -out MOK.der
 ```
 
-
-Sign the Kernel Module
+Sign the NVIDIA Kernel Modules:
 
 ```bash
 sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.key MOK.crt $(modinfo -n nvidia)
@@ -193,9 +186,6 @@ sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.key MOK.crt $(mod
 sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.key MOK.crt $(modinfo -n nvidia_uvm)
 ```
 
-
-
-
 Enroll the key:
 
 ```bash
@@ -208,28 +198,16 @@ Reboot:
 sudo reboot
 ```
 
+Check Secure Boot State:
+
 ```bash
 sudo mokutil --sb-state
 ```
 
+Check the NVIDIA driver:
+
 ```bash
 lsmod | grep nvidia
-```
-
-
-Old
-
-```bash
-#sudo dnf install kmodtool akmods mokutil openssl 
-```
-
-```bash
-sudo kmodgenca -a 
-sudo mokutil --import /etc/pki/akmods/certs/public_key.der 
-```
-
-```bash
-sudo mokutil --import /etc/pki/akmods/certs/public_key.der 
 ```
 
 #### Intel IPU6 Webcam
