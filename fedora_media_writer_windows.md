@@ -90,8 +90,8 @@ The Fedora Media Writer can restore the USB Flash Drive:
 
 <img src="./images/fedora_media_writer_windows/img_018.png" alt="img_018" width="600"/>
 
-However the USB will be restored using the exFAT will system:
+However the USB will be restored using the exFAT file system:
 
 <img src="./images/fedora_media_writer_windows/img_019.png" alt="img_019" width="600"/>
 
-The USB Flash Drive can be restored on Windows using Rufus. For more details see [Restore USB on Windows](restore_usb_windows.md)
+The USB Flash Drive can be restored on Windows using Rufus. For more details see [Restore USB on Windows](/.restore_usb_windows.md)

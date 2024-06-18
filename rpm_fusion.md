@@ -1,0 +1,271 @@
+## RPM Fusion
+
+RPM Fusion is a third-party software repository for Fedora, providing additional software packages that are not included in the official Fedora repositories usually due to the software being closed-source, under-development or having some sort of licensing restrictions:
+
+### Enabling the RPM Fusion Repositories
+
+The RPM Fusion Free repository contains open-source software that adheres that are entirely open-source and free to use, modify, and distribute:
+
+```bash
+sudo dnf install \   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
+```
+
+The RPM Fusion Non-Free repository includes proprietary software or software with restrictive licenses, such as closed-source codecs and  closed-source drivers. The closed-source code in RPM Fusion Non-Free, can be used by the user without paying. Non-free generally means the software in the repository is closed-source. Closed source means the code used to develop a package is obfuscated by the developer to protect their own intellectual property. It is not included in Fedora because it cannot be audited by Linux Kernel developers for code quality:
+
+```bash
+sudo dnf install \   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+
+Once the repositories are added, a search for updates should be made:
+
+```bash
+sudo dnf upgrade --refresh 
+```
+
+The packages in these repositories can be listed:
+
+```bash
+sudo dnf repository-packages rpmfusion-free list
+sudo dnf repository-packages rpmfusion-nonfree list
+```
+
+The computer can be rebooted:
+
+```bash
+sudo reboot
+```
+
+### Multimedia Codecs
+
+ffmpeg is powerful multimedia framework that includes codecs for handling video, audio, and other multimedia files.
+
+```bash
+sudo dnf install ffmpeg
+```
+
+GStreamer is a multimedia framework that provides plugins for handling various multimedia formats:
+
+```bash
+sudo dnf install gstreamer1-plugins-base
+```
+
+GStreamer has a number of plugins.
+
+*Good Plugins* are stable, well-maintained plugins for common multimedia tasks:
+
+```bash
+sudo dnf install gstreamer1-plugins-good gstreamer1-plugins-good-extras
+```
+
+*Bad Plugins* are under development or with potential legal or technical issues:
+
+```bash
+sudo dnf install gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-extras
+```
+
+*Ugly Plugins* are plugins for formats that may have legal restrictions or patents:
+
+```bash
+sudo dnf install gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free
+```
+
+LAME for MP3 Encoding:
+
+```bash
+sudo dnf install lame
+```
+
+libdvdcss is a library required for playing encrypted DVDs:
+
+```bash
+sudo dnf install libdvdcss
+```
+
+FAAD2 for AAC decoder:
+
+```bash
+sudo dnf install faad2
+```
+
+FAAC for AAC encoder:
+
+```bash
+sudo dnf install faac
+```
+
+Xvidcore for Xvid video codec:
+
+```bash
+sudo dnf install xvidcore
+```
+
+libdca for DTS Coherent Acoustics decoder:
+
+
+```bash
+sudo dnf install libdca
+```
+
+After installing the multimedia codecs, reboot:
+
+```bash
+sudo reboot
+```
+
+### Drivers
+
+#### Linux Kernel Drivers
+
+The Linux Kernel only contains stable open-source drivers developed jointly between chip manufacturers and kernel developers: 
+
+* Intel → Open Source + Kernel Drivers
+* AMD → Open Source + Kernel Drivers
+* Broadcom → Open Source + Kernel Drivers
+* Qualcomm → Open Source + Kernel Drivers 
+* Realtek → Open Source + Kernel Drivers 
+
+Since most hardware is manufactured by the vendors above, most hardware will work with the Linux kernel out of the box.
+
+Closed-source Linux drivers are provided by manufacturers however their code is obfuscated to hide confidential intellectual property. As the quality of obfuscated drivers cannot be reviewed for code quality or further tweaked for performance it is not included in the Linux Kernel. One notable chip manufacturer releases closed-source obfuscated drivers:
+
+* NVIDIA → Closed Source
+
+The Linux kernel therefore does not include the closed-source driver provided by NVIDIA but instead includes the open-source Nouveau which is essentially a driver reverse-engineered using limited information NVIDIA provide on their chips. Because the Linux Kernel developers have limited information on the chips, the reverse-engineered open-source driver does not perform as well as the closed-source driver developed by NVIDIA.
+
+Note the Linux Kernel is signed and passes Secure Boot. Installation of third-party drivers requires creation of a Machine Owner Key or Disabling of Secure Boot.
+
+#### The NVIDIA Driver
+
+NVIDIA repository vs RPM fusion...
+
+##### Installing the NVIDIA RPM Fusion Driver
+
+Check details:
+
+```
+modinfo nouveau
+modinfo nvidia
+```
+
+Install the NVIDIA driver and dependencies from the RPM Fusion repositories:
+
+```bash
+sudo dnf install gcc kernel-headers kernel-devel akmod-nvidia xorg-x11-drv-nvidia xorg-x11-drv-nvidia-libs xorg-x11-drv-nvidia-libs.i686 
+```
+
+Retrieve NVIDIA driver version:
+
+```bash
+modinfo -F version nvidia 
+```
+
+Forcefully rebuild and reinstall kernel modules provided by akmod packages:
+
+```bash
+sudo akmods --force
+```
+
+Forcefully regenerate the initial ramdisk (initramfs):
+
+```bash
+sudo dracut --force 
+```
+
+##### Signing the NVIDIA Driver from RPM Fusion
+
+Generate a Key Pair
+
+```bash
+openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=Secure Boot Key/"
+```
+
+Sign the Kernel Module
+
+```bash
+sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.priv MOK.der $(modinfo -n nvidia)
+```
+
+Enroll the key:
+
+```bash
+sudo mokutil --import MOK.der
+```
+
+Reboot:
+
+```bash
+sudo reboot
+```
+
+Old
+
+```bash
+#sudo dnf install kmodtool akmods mokutil openssl 
+```
+
+```bash
+sudo kmodgenca -a 
+sudo mokutil --import /etc/pki/akmods/certs/public_key.der 
+```
+
+```bash
+sudo mokutil --import /etc/pki/akmods/certs/public_key.der 
+```
+
+#### Intel IPU6 Webcam
+
+##### Installing the IPU6 Experimental Driver
+
+Enable rpmfusion free and non-free testing:
+
+```bash
+sudo dnf update \
+  --enablerepo=updates-testing \
+  --enablerepo=rpmfusion-free-updates-testing \
+  --enablerepo=rpmfusion-nonfree-updates-testing \
+  'kernel*' '*v4l2loopback'
+```
+
+Install akmod-intel-ipu6 test driver:
+
+```bash
+sudo dnf install \
+  --enablerepo=updates-testing \
+  --enablerepo=rpmfusion-free-updates-testing \
+  --enablerepo=rpmfusion-nonfree-updates-testing \
+  akmod-intel-ipu6
+```
+
+Update:
+
+```bash
+sudo dnf update --enablerepo=rpmfusion-nonfree-updates-testing 'ipu6-camera-*'
+```
+
+```bash
+sudo rm /lib/modules/$(uname -r)/kernel/drivers/media/i2c/ov01a10.ko.xz; sudo depmod -a
+```
+
+[Hans Live Journal](https://hansdegoede.livejournal.com/)
+
+##### Signing the IPU6 Driver from RPM Fusion
+
+Generate a Key Pair:
+
+```bash
+openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=Secure Boot Key/"
+```
+
+Sign the Kernel Module:
+
+```bash
+sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.priv MOK.der $(modinfo -n akmod-intel-ipu6)
+```
+
+Enroll the Key:
+
+```bash
+sudo mokutil --import MOK.der
+```
+
+[Return to Fedora Installation Guide](./readme.md).

@@ -76,6 +76,12 @@ GNOME contains a number of commonly preinstalled applications. The GNOME Softwar
 
 * [Applications](./applications.md)
  
+## RPM Fusion
+
+RPM Fusion is a third-party software repository for Fedora, providing additional software packages that are not included in the official Fedora repositories usually due to the software being closed-source, under-development or having some sort of licensing restrictions, this mainly includes closed-source multimedia codecs and drivers, notably the NVIDIA driver:
+
+* [RPM Fusion and NVIDIA Drivers](./rpm_fusion.md)
+
 ## Installation Video
 
 * [Tutorial Video](https://www.youtube.com/watch?v=k7ObxUfRqWQ&ab_channel=PhilipYip)
