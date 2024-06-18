@@ -31,55 +31,22 @@ sudo dnf repository-packages rpmfusion-nonfree list
 
 ### Multimedia Codecs
 
-ffmpeg is powerful multimedia framework that includes codecs for handling video, audio, and other multimedia files and is preinstalled.GStreamer is a multimedia framework that provides plugins for handling various multimedia formats and is also preinstalled. GStreamer has a number of plugins.
+GStreamer is a preinstalled multimedia framework that provides plugins for handling various multimedia formats. These plugins are grouped into:
 
-*Good Plugins* are stable, well-maintained plugins for common multimedia tasks:
+* *Good Plugins* are stable, well-maintained plugins for common multimedia task
+* *Bad Plugins* are under development or with potential legal or technical issues
+* *Ugly Plugins* are plugins for formats that may have legal restrictions or patents
+
+To install the additional plugins from the rpmfusion repositories use:
 
 ```bash
-sudo dnf install gstreamer1-plugins-good-extras
+sudo dnf install gstreamer1-plugins-good-extras gstreamer1-plugins-bad-free-extras gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free rpmfusion-free-release-tainted lame faad2 faac
 ```
 
-*Bad Plugins* are under development or with potential legal or technical issues:
+The libdvdcss for dvd playback, requires rpmfusion-free-release-tainted as a dependency and can now be installed:
 
 ```bash
-sudo dnf install gstreamer1-plugins-bad-free-extras
-```
-
-*Ugly Plugins* are plugins for formats that may have legal restrictions or patents:
-
-```bash
-sudo dnf install gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free
-```
-
-LAME for MP3 Encoding:
-
-```bash
-sudo dnf install lame
-```
-
-~~libdvdcss is a library required for playing encrypted DVDs:~~
-
-```bash
-sudo dnf install rpmfusion-free-release-tainted
 sudo dnf install libdvdcss
-```
-
-FAAD2 for AAC decoder:
-
-```bash
-sudo dnf install faad2
-```
-
-FAAC for AAC encoder:
-
-```bash
-sudo dnf install faac
-```
-
-After installing the multimedia codecs, reboot:
-
-```bash
-sudo reboot
 ```
 
 ### Drivers
@@ -102,15 +69,17 @@ Closed-source Linux drivers are provided by manufacturers however their code is 
 
 The Linux kernel therefore does not include the closed-source driver provided by NVIDIA but instead includes the open-source Nouveau which is essentially a driver reverse-engineered using limited information NVIDIA provide on their chips. Because the Linux Kernel developers have limited information on the chips, the reverse-engineered open-source driver does not perform as well as the closed-source driver developed by NVIDIA.
 
-Note the Linux Kernel is signed and passes Secure Boot. Installation of third-party drivers requires creation of a Machine Owner Key or Disabling of Secure Boot.
+#### Secure Boot
+
+RedHat only signs the Linux kernel or open-source drivers is RPM Fusion. Unsigned drivers do not pass Secure Boot by default and require creation of a Machine Owner Key or Disabling of Secure Boot.
 
 #### The Intel Driver
+
+For Intel video, the following Intel drivers can be installed:
 
 ```bash
 sudo dnf install intel-media-driver xorg-x11-drv-intel linux-firmware libva-intel-driver libva-utils mesa-vulkan-drivers mesa-dri-drivers mesa-libGL mesa-libEGL mesa-libgbm gstreamer1-vaapi ffmpeg xwayland libdrm intel-gpu-tools i7z sysstat tlp powertop
 ```
-
-
 
 #### The NVIDIA Driver
 
