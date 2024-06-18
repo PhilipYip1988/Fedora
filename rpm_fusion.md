@@ -78,10 +78,6 @@ RedHat only signs the Linux kernel or open-source drivers is RPM Fusion. Unsigne
 For Intel video, the following Intel drivers can be installed:
 
 ```bash
-sudo dnf install intel-media-driver xorg-x11-drv-intel linux-firmware libva-intel-driver libva-utils mesa-vulkan-drivers mesa-dri-drivers mesa-libGL mesa-libEGL mesa-libgbm gstreamer1-vaapi ffmpeg xwayland libdrm intel-gpu-tools i7z sysstat tlp powertop
-```
-
-```bash
 sudo dnf install intel-media-driver xorg-x11-drv-intel linux-firmware libva-intel-driver libva-utils mesa-vulkan-drivers mesa-dri-drivers mesa-libGL mesa-libEGL mesa-libgbm gstreamer1-vaapi libdrm intel-gpu-tools sysstat tlp powertop
 ```
 
