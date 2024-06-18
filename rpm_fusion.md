@@ -4,16 +4,16 @@ RPM Fusion is a third-party software repository for Fedora, providing additional
 
 ### Enabling the RPM Fusion Repositories
 
-The RPM Fusion Free repository contains open-source software that adheres that are entirely open-source and free to use, modify, and distribute:
+The RPM Fusion Free repository contains open-source software that adheres that are entirely open-source and free to use, modify, and distribute. The RPM Fusion Non-Free repository includes proprietary software or software with restrictive licenses, such as closed-source codecs and  closed-source drivers. The closed-source code in RPM Fusion Non-Free, can be used by the user without paying. Non-free generally means the software in the repository is closed-source. Closed source means the code used to develop a package is obfuscated by the developer to protect their own intellectual property. It is not included in Fedora because it cannot be audited by Linux Kernel developers for code quality. Both repositories can be enabled using:
 
 ```bash
-sudo dnf install \   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
-The RPM Fusion Non-Free repository includes proprietary software or software with restrictive licenses, such as closed-source codecs and  closed-source drivers. The closed-source code in RPM Fusion Non-Free, can be used by the user without paying. Non-free generally means the software in the repository is closed-source. Closed source means the code used to develop a package is obfuscated by the developer to protect their own intellectual property. It is not included in Fedora because it cannot be audited by Linux Kernel developers for code quality:
+
 
 ```bash
-sudo dnf install \   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf config-manager --enable fedora-cisco-openh264
 ```
 
 Once the repositories are added, a search for updates should be made:
@@ -37,30 +37,18 @@ sudo reboot
 
 ### Multimedia Codecs
 
-ffmpeg is powerful multimedia framework that includes codecs for handling video, audio, and other multimedia files.
-
-```bash
-sudo dnf install ffmpeg
-```
-
-GStreamer is a multimedia framework that provides plugins for handling various multimedia formats:
-
-```bash
-sudo dnf install gstreamer1-plugins-base
-```
-
-GStreamer has a number of plugins.
+ffmpeg is powerful multimedia framework that includes codecs for handling video, audio, and other multimedia files and is preinstalled.GStreamer is a multimedia framework that provides plugins for handling various multimedia formats and is also preinstalled. GStreamer has a number of plugins.
 
 *Good Plugins* are stable, well-maintained plugins for common multimedia tasks:
 
 ```bash
-sudo dnf install gstreamer1-plugins-good gstreamer1-plugins-good-extras
+sudo dnf install gstreamer1-plugins-good-extras
 ```
 
 *Bad Plugins* are under development or with potential legal or technical issues:
 
 ```bash
-sudo dnf install gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-extras
+sudo dnf install gstreamer1-plugins-bad-free-extras
 ```
 
 *Ugly Plugins* are plugins for formats that may have legal restrictions or patents:
@@ -75,9 +63,10 @@ LAME for MP3 Encoding:
 sudo dnf install lame
 ```
 
-libdvdcss is a library required for playing encrypted DVDs:
+~~libdvdcss is a library required for playing encrypted DVDs:~~
 
 ```bash
+sudo dnf install rpmfusion-free-release-tainted
 sudo dnf install libdvdcss
 ```
 
@@ -91,19 +80,6 @@ FAAC for AAC encoder:
 
 ```bash
 sudo dnf install faac
-```
-
-Xvidcore for Xvid video codec:
-
-```bash
-sudo dnf install xvidcore
-```
-
-libdca for DTS Coherent Acoustics decoder:
-
-
-```bash
-sudo dnf install libdca
 ```
 
 After installing the multimedia codecs, reboot:
@@ -133,6 +109,14 @@ Closed-source Linux drivers are provided by manufacturers however their code is 
 The Linux kernel therefore does not include the closed-source driver provided by NVIDIA but instead includes the open-source Nouveau which is essentially a driver reverse-engineered using limited information NVIDIA provide on their chips. Because the Linux Kernel developers have limited information on the chips, the reverse-engineered open-source driver does not perform as well as the closed-source driver developed by NVIDIA.
 
 Note the Linux Kernel is signed and passes Secure Boot. Installation of third-party drivers requires creation of a Machine Owner Key or Disabling of Secure Boot.
+
+#### The Intel 
+
+```bash
+sudo dnf install intel-media-driver xorg-x11-drv-intel linux-firmware libva-intel-driver libva-utils mesa-vulkan-drivers mesa-dri-drivers mesa-libGL mesa-libEGL mesa-libgbm gstreamer1-vaapi ffmpeg xwayland libdrm intel-gpu-tools i7z sysstat tlp powertop
+```
+
+
 
 #### The NVIDIA Driver
 
