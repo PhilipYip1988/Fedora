@@ -13,9 +13,6 @@ The following system requirements should be satisfied for a good Fedora experien
 The Bootable USB can be created on Windows, Linux and Mac using the Fedora Media Writer:
 
 * [Creating a Bootable USB (Fedora Media Writer - Windows)](./fedora_media_writer_windows.md)
-
-Incomplete!
-
 * [Creating a Bootable USB (Fedora Media Writer - Linux)](./fedora_media_writer_linux.md)
 
 ## Updating the BIOS from USB
@@ -23,11 +20,7 @@ Incomplete!
 BIOS Updates are often released in order to accommodate new Operating Systems. It is recommended to make sure your BIOS is up to date before installing Fedora. This can be done from USB for most Dell models manufactured post-2016:
 
 * [Updating the BIOS from USB (Windows)](./bios_update_usb_windows.md)
-
-Incomplete!
-
 * [Updating the BIOS from USB (Linux)](./bios_update_usb_linux.md)
-
 
 ## BIOS Setup
 
@@ -82,21 +75,6 @@ The Wayland Display Protocol contains experimental Fractional Scaling which allo
 GNOME contains a number of commonly preinstalled applications. The GNOME Software contains equivalents to most of the software installed in Windows and some applications have web application equivalents:
 
 * [Applications](./applications.md)
-
-## Drivers
-
-This driver is suitable for any GPU found in 2014 and later.
-
-
-* RPM Fusion Installation
-    * Linux Kernel VS Third-Party Drivers
-    * Disabling Secure Boot
-    * Free vs Non-Free
-    * Enabling RPM Repositories
-    * Webcam Driver
-
-* NVIDIA Driver and Codecs
-* RPM Fusion
  
 ## Installation Video
 
