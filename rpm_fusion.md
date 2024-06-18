@@ -81,6 +81,15 @@ For Intel video, the following Intel drivers can be installed:
 sudo dnf install intel-media-driver xorg-x11-drv-intel linux-firmware libva-intel-driver libva-utils mesa-vulkan-drivers mesa-dri-drivers mesa-libGL mesa-libEGL mesa-libgbm gstreamer1-vaapi ffmpeg xwayland libdrm intel-gpu-tools i7z sysstat tlp powertop
 ```
 
+```bash
+sudo dnf install intel-media-driver xorg-x11-drv-intel linux-firmware libva-intel-driver libva-utils mesa-vulkan-drivers mesa-dri-drivers mesa-libGL mesa-libEGL mesa-libgbm gstreamer1-vaapi libdrm intel-gpu-tools sysstat tlp powertop
+```
+
+Not installing
+
+xwayland i7z
+
+
 #### The NVIDIA Driver
 
 The NVIDIA driver supports NVIDIA cards manufactured post 2014. The NVIDIA driver can be found in multiple locations:
