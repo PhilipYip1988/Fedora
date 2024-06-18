@@ -142,7 +142,7 @@ modinfo nvidia
 Install the NVIDIA driver and dependencies from the RPM Fusion repositories:
 
 ```bash
-sudo dnf install gcc kernel-headers kernel-devel akmod-nvidia xorg-x11-drv-nvidia xorg-x11-drv-nvidia-libs xorg-x11-drv-nvidia-libs.i686 libva-nvidia-driver
+sudo dnf install gcc kernel-headers kernel-devel akmod-nvidia xorg-x11-drv-nvidia xorg-x11-drv-nvidia-cuda xorg-x11-drv-nvidia-libs xorg-x11-drv-nvidia-libs.i686 libva-nvidia-driver
 ```
 
 Retrieve NVIDIA driver version:
@@ -171,14 +171,30 @@ Generate a Key Pair
 openssl req -new -x509 -newkey rsa:2048 -keyout MOK.key -out MOK.crt -nodes -days 36500 -subj "/CN=My NVIDIA Module Signing/"
 ```
 
+test
+
+```bash
+openssl x509 -in MOK.crt -outform DER -out MOK.der
+```
+
+
 Sign the Kernel Module
 
 ```bash
 sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.key MOK.crt $(modinfo -n nvidia)
+```
+```bash
 sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.key MOK.crt $(modinfo -n nvidia_drm)
+```
+```bash
 sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.key MOK.crt $(modinfo -n nvidia_modeset)
+```
+```bash
 sudo /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 MOK.key MOK.crt $(modinfo -n nvidia_uvm)
 ```
+
+
+
 
 Enroll the key:
 
