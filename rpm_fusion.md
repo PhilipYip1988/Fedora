@@ -27,6 +27,39 @@ sudo dnf install package1 \
                  package2
 ```
 
+###
+
+List repositories:
+
+```bash
+ sudo dnf repolist
+```
+
+
+
+```bash
+ sudo dnf repository-packages fedora list installed
+```
+
+
+```bash
+ sudo dnf repository-packages fedora list available
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Enabling the RPM Fusion Repositories
 
 The RPM Fusion Free repository contains open-source software that adheres that are entirely open-source and free to use, modify, and distribute. The RPM Fusion Non-Free repository includes proprietary software or software with restrictive licenses, such as closed-source codecs and  closed-source drivers. The closed-source code in RPM Fusion Non-Free, can be used by the user without paying. Non-free generally means the software in the repository is closed-source. Closed source means the code used to develop a package is obfuscated by the developer to protect their own intellectual property. It is not included in Fedora because it cannot be audited by Linux Kernel developers for code quality. Both repositories can be enabled using:
