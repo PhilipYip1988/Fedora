@@ -1,6 +1,31 @@
 ## RPM Fusion
 
-RPM Fusion is a third-party software repository for Fedora, providing additional software packages that are not included in the official Fedora repositories usually due to the software being closed-source, under-development or having some sort of licensing restrictions:
+RPM Fusion is a third-party software repository for Fedora, providing additional software packages that are not included in the official Fedora repositories usually due to the software being closed-source, under-development or having some sort of licensing restrictions. 
+
+### Fedora Package Manager
+
+The Linux Terminal and the Fedora package manager will be used extensively below:
+
+* Recall prefixing a command with ```sudo``` is an instruction to run the command as a super user with elevated privileges. ```sudo``` is an abbreviation for super suer do.
+* ```dnf``` is the name of the package manager which is an abbreviation for dandified yum. ```yum``` was the original package manager which was an abbreviation for yellowdog update manager.
+
+To install a single package, the following syntax is used:
+
+```bash
+sudo dnf install package1
+```
+
+Multiple packages can be installed:
+
+```bash
+sudo dnf install package1 package2
+```
+```\``` can be used to split a command over multiple lines, this can sometimes be done to make the code more readible:
+
+```bash
+sudo dnf install package1 \
+                 package2
+```
 
 ### Enabling the RPM Fusion Repositories
 
