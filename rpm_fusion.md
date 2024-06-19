@@ -108,25 +108,19 @@ RedHat only signs the Linux kernel or open-source drivers is RPM Fusion. Unsigne
 
 #### Intel Processor
 
-Check if prinstalled, linux-firmware
-
-
 For an Intel Processor, the following packages can be installed:
 
 ```bash
-sudo dnf install \
-         microcode_ctl \
-         thermald \
-         tlp \
-         powertop \
-         sysstat \
-         perf \
-         kernel-tools \
+sudo dnf install thermald \
+                 tlp \
+                 powertop \
+                 perf \
+                 kernel-tools \
 ```
 
 #### Intel Video
 
-For Intel video, the following Intel drivers can be installed:
+For an Intel video card, the following packages can be installed:
 
 ```bash
 sudo dnf install xorg-x11-drv-intel \
@@ -141,8 +135,6 @@ sudo dnf install xorg-x11-drv-intel \
                  libdrm \
                  sysstat \
 ```
-
-rem0ove and add to codecs                  gstreamer1-vaapi 
 
 #### The NVIDIA Driver
 
