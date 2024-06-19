@@ -7,7 +7,8 @@ RPM Fusion is a third-party software repository for Fedora, providing additional
 The RPM Fusion Free repository contains open-source software that adheres that are entirely open-source and free to use, modify, and distribute. The RPM Fusion Non-Free repository includes proprietary software or software with restrictive licenses, such as closed-source codecs and  closed-source drivers. The closed-source code in RPM Fusion Non-Free, can be used by the user without paying. Non-free generally means the software in the repository is closed-source. Closed source means the code used to develop a package is obfuscated by the developer to protect their own intellectual property. It is not included in Fedora because it cannot be audited by Linux Kernel developers for code quality. Both repositories can be enabled using:
 
 ```bash
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+                 https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
 The Fedora Cisco Openh264 repository needs to be enabled:
@@ -26,6 +27,8 @@ The packages in these repositories can be listed:
 
 ```bash
 sudo dnf repository-packages rpmfusion-free list
+```
+```bash
 sudo dnf repository-packages rpmfusion-nonfree list
 ```
 
@@ -40,7 +43,12 @@ GStreamer is a preinstalled multimedia framework that provides plugins for handl
 To install the additional plugins from the rpmfusion repositories use:
 
 ```bash
-sudo dnf install gstreamer1-plugins-good-extras gstreamer1-plugins-bad-free-extras gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free rpmfusion-free-release-tainted lame faad2 faac
+sudo dnf install gstreamer1-plugins-good-extras \
+                 gstreamer1-plugins-bad-free-extras \
+                 gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free \
+                 gstreamer1-vaapi \
+                 rpmfusion-free-release-tainted \
+                 lame faad2 faac
 ```
 
 The libdvdcss for dvd playback, requires rpmfusion-free-release-tainted as a dependency and can now be installed:
@@ -78,13 +86,22 @@ RedHat only signs the Linux kernel or open-source drivers is RPM Fusion. Unsigne
 For Intel video, the following Intel drivers can be installed:
 
 ```bash
-sudo dnf install intel-media-driver xorg-x11-drv-intel linux-firmware libva-intel-driver libva-utils mesa-vulkan-drivers mesa-dri-drivers mesa-libGL mesa-libEGL mesa-libgbm gstreamer1-vaapi libdrm intel-gpu-tools sysstat tlp powertop
+sudo dnf install xorg-x11-drv-intel \
+                 intel-media-driver \
+                 intel-gpu-tools \
+                 libva-utils \
+                 mesa-vulkan-drivers \
+                 mesa-dri-drivers \
+                 mesa-libGL \
+                 mesa-libEGL \
+                 mesa-libgbm \
+                 gstreamer1-vaapi \
+                 libdrm \
+                 sysstat \
+                 tlp \
+                 powertop \
+                 linux-firmware
 ```
-
-Not installing
-
-xwayland i7z
-
 
 #### The NVIDIA Driver
 
@@ -110,7 +127,15 @@ modinfo nvidia
 Install the NVIDIA driver and dependencies from the RPM Fusion repositories:
 
 ```bash
-sudo dnf install gcc kernel-headers kernel-devel akmod-nvidia xorg-x11-drv-nvidia xorg-x11-drv-nvidia-cuda xorg-x11-drv-nvidia-libs xorg-x11-drv-nvidia-libs.i686 libva-nvidia-driver
+sudo dnf install gcc \
+                 kernel-headers \
+                 kernel-devel \
+                 akmod-nvidia \
+                 xorg-x11-drv-nvidia \
+                 xorg-x11-drv-nvidia-cuda \
+                 xorg-x11-drv-nvidia-libs \
+                 xorg-x11-drv-nvidia-libs.i686 \
+                 libva-nvidia-driver
 ```
 
 Retrieve NVIDIA driver version:
