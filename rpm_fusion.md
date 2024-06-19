@@ -106,7 +106,25 @@ The Linux kernel therefore does not include the closed-source driver provided by
 
 RedHat only signs the Linux kernel or open-source drivers is RPM Fusion. Unsigned drivers do not pass Secure Boot by default and require creation of a Machine Owner Key or Disabling of Secure Boot.
 
-#### The Intel Driver
+#### Intel Processor
+
+Check if prinstalled, linux-firmware
+
+
+For an Intel Processor, the following packages can be installed:
+
+```bash
+sudo dnf install \
+         microcode_ctl \
+         thermald \
+         tlp \
+         powertop \
+         sysstat \
+         perf \
+         kernel-tools \
+```
+
+#### Intel Video
 
 For Intel video, the following Intel drivers can be installed:
 
@@ -122,9 +140,6 @@ sudo dnf install xorg-x11-drv-intel \
                  mesa-libgbm \
                  libdrm \
                  sysstat \
-                 tlp \
-                 powertop \
-                 linux-firmware
 ```
 
 rem0ove and add to codecs                  gstreamer1-vaapi 
