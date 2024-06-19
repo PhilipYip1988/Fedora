@@ -95,13 +95,14 @@ sudo dnf install xorg-x11-drv-intel \
                  mesa-libGL \
                  mesa-libEGL \
                  mesa-libgbm \
-                 gstreamer1-vaapi \
                  libdrm \
                  sysstat \
                  tlp \
                  powertop \
                  linux-firmware
 ```
+
+rem0ove and add to codecs                  gstreamer1-vaapi 
 
 #### The NVIDIA Driver
 
